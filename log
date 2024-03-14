@@ -428,3 +428,17 @@ Thu 14 Mar 2024 09:12:26 PM UTC:
  tests:  0|5
 total_score: 20/70
 58e33e0
+Thu 14 Mar 2024 09:15:01 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:20: error: expected ‘,’ or ‘;’ before ‘:’ token
+   47 |     for (int j = 0 : j < newSize; j++) {
+      |                    ^
+exercises.c:47:38: error: expected ‘;’ before ‘)’ token
+   47 |     for (int j = 0 : j < newSize; j++) {
+      |                                      ^
+      |                                      ;
+Compilation failed
+206fb3c
