@@ -42,7 +42,7 @@ retorna.
 int *filterEvenNumbers(int arr[], int size, int *newSize) {return NULL; }
   /*int *newArr = (int *)malloc(size * sizeof(int));
   for (int i = 0; i < size; i++) {
-    if (arr[i] % 2 == 0)/*
+    if (arr[i] % 2 == 0)*/
       
   
   
