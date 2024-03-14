@@ -442,3 +442,14 @@ exercises.c:47:38: error: expected ‘;’ before ‘)’ token
       |                                      ;
 Compilation failed
 206fb3c
+Thu 14 Mar 2024 09:15:12 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:24: error: comparison between pointer and integer [-Werror]
+   47 |     for (int j = 0 ; j < newSize; j++) {
+      |                        ^
+cc1: all warnings being treated as errors
+Compilation failed
+db5cc29
