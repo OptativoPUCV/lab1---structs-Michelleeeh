@@ -4,18 +4,18 @@ a #include<ctype.h>
 #include <stdlib.h>
 #include <string.h>
 
-    /*
-    Ejercicio 1: Encuentra el Elemento Mayor
-    Descripción: Escribe una función que tome un arreglo de enteros
-    y su tamaño, y devuelva el valor más grande del arreglo.
-    */
-    int findMax(int arr[], int size) {
+/*
+Ejercicio 1: Encuentra el Elemento Mayor
+Descripción: Escribe una función que tome un arreglo de enteros
+y su tamaño, y devuelva el valor más grande del arreglo.
+*/
+int findMax(int arr[], int size) {
   int mayor = arr[0];
   for (int i = 0; i < size; i++) {
     if (arr[i] > mayor)
       arr[i] = mayor;
   }
-  return 0;
+  return mayor;
 }
 
 /*
@@ -23,7 +23,12 @@ Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+void reverseArray(int arr[], int size) {
+  for (int i = 0; i < size; i++) {
+    int temp = arr[i];
+    arr[size - i - 1] = temp;
+  }
+}
 
 /*
 Ejercicio 3: Filtrar Números Pares
@@ -34,7 +39,12 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún
 valor específico. *newsize debe almacenar el tamaño del nuevo arreglo que se
 retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *newSize) {
+  int *newArr = (int *)malloc(size * sizeof(int));
+  for (int i = 0; i < size; i++) {
+    
+  
+  return NULL; }
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
