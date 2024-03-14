@@ -216,3 +216,20 @@ test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 9c0d1d3
+Thu 14 Mar 2024 08:46:36 PM UTC: 
+ exercises.c | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c:45:25: error: "/*" within comment [-Werror=comment]
+   45 |     if (arr[i] % 2 == 0)/*
+      |                          
+exercises.c:50:1: error: "/*" within comment [-Werror=comment]
+   50 | /*
+      |  
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:59:24: error: expected expression before ‘}’ token
+   59 |                        }
+      |                        ^
+cc1: all warnings being treated as errors
+Compilation failed
+b319058

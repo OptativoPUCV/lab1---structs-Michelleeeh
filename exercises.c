@@ -39,13 +39,13 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún
 valor específico. *newsize debe almacenar el tamaño del nuevo arreglo que se
 retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) {
-  int *newArr = (int *)malloc(size * sizeof(int));
+int *filterEvenNumbers(int arr[], int size, int *newSize) {return NULL; }
+  /*int *newArr = (int *)malloc(size * sizeof(int));
   for (int i = 0; i < size; i++) {
-    if (arr[i] % 2 == 0)
+    if (arr[i] % 2 == 0)/*
       
   
-  return NULL; }
+  
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -54,7 +54,9 @@ ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) { }
+                       int result[]) {
+  for (int i = 0; i < size1 + size2; i++)
+                       }
 
 /*
 Ejercicio 5: Comprobación de Ordenación
