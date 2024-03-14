@@ -43,8 +43,8 @@ retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int *newArr = (int *)malloc(size * sizeof(int));
-  for (int i = 0; i < size; i++) {
-    for (int j = 0 ; j < *newSize; j++) {
+  for (int i = 0; i < *newSize; i++) {
+    for (int j = 0 ; j < size ; j++) {
       if (arr[i] % 2 == 0)
         newArr[j] = arr[i];
     }
