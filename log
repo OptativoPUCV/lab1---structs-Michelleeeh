@@ -362,3 +362,23 @@ exercises.c:50:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 d19c442
+Thu 14 Mar 2024 09:04:57 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:45:7: error: ‘newSize’ redeclared as different kind of symbol
+   45 |   int newSize[] = (int *)malloc(size * sizeof(int));
+      |       ^~~~~~~
+exercises.c:44:50: note: previous definition of ‘newSize’ with type ‘int *’
+   44 | int *filterEvenNumbers(int arr[], int size, int *newSize) {
+      |                                             ~~~~~^~~~~~~
+exercises.c:45:19: error: invalid initializer
+   45 |   int newSize[] = (int *)malloc(size * sizeof(int));
+      |                   ^
+exercises.c:50:10: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   50 |   return *newSize;
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2a9b890
