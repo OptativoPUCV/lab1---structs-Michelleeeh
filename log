@@ -289,3 +289,16 @@ Thu 14 Mar 2024 08:59:18 PM UTC:
  tests:  0|5
 total_score: 20/70
 bad692b
+Thu 14 Mar 2024 09:01:53 PM UTC: 
+ exercises.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:45:8: error: ‘newSize’ redeclared as different kind of symbol
+   45 |   int *newSize = (int *)malloc(size * sizeof(int));
+      |        ^~~~~~~
+exercises.c:44:50: note: previous definition of ‘newSize’ with type ‘int *’
+   44 | int *filterEvenNumbers(int arr[], int size, int *newSize) {
+      |                                             ~~~~~^~~~~~~
+Compilation failed
+79271ba
