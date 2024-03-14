@@ -453,3 +453,13 @@ exercises.c:47:24: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 db5cc29
+Thu 14 Mar 2024 09:15:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:26: error: expected expression before ‘int’
+   47 |     for (int j = 0 ; j < int *newSize; j++) {
+      |                          ^~~
+Compilation failed
+18c5872
