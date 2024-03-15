@@ -98,7 +98,7 @@ int checkSorted(int arr[], int size) {
     while (i < size - 2) {
       if (arr[i] < arr[i + 1]) {
         i++;
-        if (i == size - 1) {
+        if (arr[i + 1] == arr[size - 1]) {
           return 1;
         }
         return 0;
@@ -107,7 +107,7 @@ int checkSorted(int arr[], int size) {
       
       else if (arr[i] > arr[i + 1]) {
         i++;
-        if (i == size - 2) {
+        if (arr[i + 1] == arr[size - 1]) {
           return -1;
         }
         return 0;
