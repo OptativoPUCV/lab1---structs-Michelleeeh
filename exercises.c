@@ -101,16 +101,18 @@ int checkSorted(int arr[], int size) {
         if (i == size - 1) {
           return 1;
         }
-      }
         return 0;
+      }
+        
       
       else if (arr[i] > arr[i + 1]) {
         i++;
         if (i == size - 1) {
           return -1;
         }
-      }
         return 0;
+      }
+        
       }
     }
     return 0;

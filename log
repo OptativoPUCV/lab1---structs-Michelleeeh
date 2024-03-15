@@ -732,3 +732,20 @@ exercises.c:115:5: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 6638b88
+Fri 15 Mar 2024 10:17:12 PM UTC: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c:118:5: error: expected identifier or ‘(’ before ‘return’
+  118 |     return 0;
+      |     ^~~~~~
+exercises.c:119:3: error: expected identifier or ‘(’ before ‘}’ token
+  119 |   }
+      |   ^
+exercises.c: In function ‘checkSorted’:
+exercises.c:117:5: error: control reaches end of non-void function [-Werror=return-type]
+  117 |     }
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+04cab5f
