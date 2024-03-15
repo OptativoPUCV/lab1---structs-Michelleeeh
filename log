@@ -838,3 +838,9 @@ exercises.c:142:10: error: ‘libr’ undeclared (first use in this function); d
 exercises.c:142:10: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 c9133be
+Fri 15 Mar 2024 10:35:31 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|2
+total_score: 50/70
+60dd648
