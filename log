@@ -710,3 +710,25 @@ Fri 15 Mar 2024 10:12:48 PM UTC:
  tests:  0|3
 total_score: 40/70
 f8af797
+Fri 15 Mar 2024 10:15:27 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:107:7: error: ‘else’ without a previous ‘if’
+  107 |       else if (arr[i] > arr[i + 1]) {
+      |       ^~~~
+exercises.c: At top level:
+exercises.c:116:5: error: expected identifier or ‘(’ before ‘return’
+  116 |     return 0;
+      |     ^~~~~~
+exercises.c:117:3: error: expected identifier or ‘(’ before ‘}’ token
+  117 |   }
+      |   ^
+exercises.c: In function ‘checkSorted’:
+exercises.c:115:5: error: control reaches end of non-void function [-Werror=return-type]
+  115 |     }
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+6638b88
