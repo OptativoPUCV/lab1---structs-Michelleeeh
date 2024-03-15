@@ -43,14 +43,14 @@ retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int *newArr = (int *)malloc(size * sizeof(int));
-  int count = 0;
+  int conteo = 0;
   for (int i = 0; i < size; i++) {
     if (arr[i] % 2 == 0) {
-      newArr[count] = arr[i];
-      count++;
+      newArr[conteo] = arr[i];
+      conteo++;
     }
   }
-  *newSize = count;
+  *newSize = conteo;
   return newArr;
 }
   
