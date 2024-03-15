@@ -95,25 +95,26 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) {
   int i = 0;
-    while (i < size - 2) {
-      if (arr[i] < arr[i + 1]) {
-        i++;
-        if (arr[i] > arr[i + 1]) {
-          return 0;
-        }
-        return 1;
+  int ascending = 1;
+  int descending = 1;
+
+  while (i < size - 1 && (ascending || descending)) {
+    if (arr[i] > arr[i + 1]) {
+      ascending = 0;
       }
-          
-      else if (arr[i] > arr[i + 1]) {
-        i++;
-        if (arr[i] < arr[i + 1]) {
-          return 0;
-        }
-        return -1;
+    if (arr[i] < arr[i + 1]) {
+      descending = 0;
       }
+      i++;
     }
-  return 0;
-  }
+
+    if (ascending)
+        return 1; // Está ordenado de menor a mayor
+    else if (descending)
+        return -1; // Está ordenado de mayor a menor
+    else
+        return 0; // No está ordenado
+}
 
 
 
@@ -142,7 +143,7 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   strcpy(libro->autor.nombre, nombreAutor);
   libro->autor.anioNacimiento = anioNacimiento;
   libro->anioPublicacion = anioPublicacion;
-                      }
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
@@ -175,7 +176,6 @@ Nodo *crearListaEnlazada(int arr[], int size) {
       ultimo->siguiente = nuevoNodo;
       ultimo = nuevoNodo;
     }
-    
   }
   return cabeza;
 }
