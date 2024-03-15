@@ -844,3 +844,21 @@ Fri 15 Mar 2024 10:35:31 PM UTC:
  tests:  0|2
 total_score: 50/70
 60dd648
+Fri 15 Mar 2024 10:38:41 PM UTC: 
+ exercises.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:166:18: error: ‘Null’ undeclared (first use in this function)
+  166 |   Nodo *ultimo = Null;
+      |                  ^~~~
+exercises.c:166:18: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:171:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  171 |     if (cabeza = NULL) {
+      |         ^~~~~~
+exercises.c:166:9: error: variable ‘ultimo’ set but not used [-Werror=unused-but-set-variable]
+  166 |   Nodo *ultimo = Null;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e4e7f2b
