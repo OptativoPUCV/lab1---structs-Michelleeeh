@@ -826,3 +826,15 @@ Fri 15 Mar 2024 10:33:27 PM UTC:
  tests:  0|3
 total_score: 40/70
 9009524
+Fri 15 Mar 2024 10:35:16 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:142:10: error: ‘libr’ undeclared (first use in this function); did you mean ‘libro’?
+  142 |   strcpy(libr->autor.nombre, nombreAutor);
+      |          ^~~~
+      |          libro
+exercises.c:142:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c9133be
