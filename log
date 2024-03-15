@@ -876,3 +876,14 @@ exercises.c:166:9: error: variable ‘ultimo’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 0a76c24
+Fri 15 Mar 2024 10:39:34 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:166:9: error: variable ‘ultimo’ set but not used [-Werror=unused-but-set-variable]
+  166 |   Nodo *ultimo = NULL;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+22eba3c
